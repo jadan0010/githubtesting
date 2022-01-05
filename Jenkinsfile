@@ -3,10 +3,10 @@ pipeline {
     parameters {
     string(name: 'versionid', defaultValue: '1.0', description: 'Provide version ID')
   }
-    //tools { 
-    //    maven 'Maven' 
-    //    jdk 'JAVA_17' 
-    //}
+    tools { 
+        maven 'Mavenpath' 
+        jdk 'java9' 
+    }
     stages {
         stage('Build') {
             steps {
